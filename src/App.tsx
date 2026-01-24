@@ -17,7 +17,7 @@ import { PrivacyPolicyPage } from './components/PrivacyPolicyPage';
 import { TermsOfServicePage } from './components/TermsOfServicePage';
 import { CookiePolicyPage } from './components/CookiePolicyPage';
 import { SecurityPolicyPage } from './components/SecurityPolicyPage';
-import { AboutPortfolioPage } from './components/about/AboutPortfolioPage';
+import { AboutUsPage } from './components/AboutUsPage';
 import { PageTransition } from './components/PageTransition';
 import { ScrollProgress } from './components/ScrollProgress';
 import { AnimatePresence } from 'motion/react';
@@ -109,10 +109,10 @@ function AnimatedRoutes() {
         <Route path="/ai-for-industry/rnd" element={<PageTransition><AIForRnDPage /></PageTransition>} />
 
         {/* About Us routes */}
-        <Route path="/about/portfolio" element={<PageTransition><AboutPortfolioPage /></PageTransition>} />
+        <Route path="/about/portfolio" element={<PageTransition><AboutUsPage /></PageTransition>} />
         <Route path="/about/blog" element={<PageTransition><PlaceholderPage title="Blog" description="Stay updated with the latest insights, trends, and best practices in AI, machine learning, and GPU optimization." /></PageTransition>} />
         <Route path="/about/career" element={<PageTransition><PlaceholderPage title="Careers" description="Join our world-class team of AI engineers and data scientists. Build the future of AI optimization with AlgoTells." /></PageTransition>} />
-        <Route path="/about" element={<PageTransition><AboutPortfolioPage /></PageTransition>} />
+        <Route path="/about" element={<PageTransition><AboutUsPage /></PageTransition>} />
         
         {/* Placeholder routes */}
         <Route path="/careers" element={<PageTransition><PlaceholderPage title="Careers" description="Join our world-class team of AI engineers and data scientists. Build the future of AI optimization with AlgoTells." /></PageTransition>} />
