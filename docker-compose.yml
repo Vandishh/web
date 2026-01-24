@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "2128:80"
+    container_name: jashom-website
+    restart: unless-stopped
+
